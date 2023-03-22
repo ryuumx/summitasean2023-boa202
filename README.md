@@ -1,7 +1,39 @@
 
-# Welcome to your CDK Python project!
+# Accelerate modern application development with Serverless
+ 
+This is a project built to demonstrate how you can accelerate your modern application development with AWS Serverless tools and services
 
-This is a blank project for CDK development with Python.
+
+## 1. Requirements
+
+  * [Python >= 3.9](https://www.python.org/downloads/)
+  * [AWS CDK 2.67.0](https://docs.aws.amazon.com/cdk/v2/guide/getting_started.html)
+  * Setup your AWS credentials
+  * If you haven't, run CDK bootstrap of your AWS account:
+
+  ```
+  $ cdk bootstrap
+  ```
+
+
+## 2. Architecture
+
+### 2.1. Basic flow (*main* branch)
+![Basic flow architecture](/docs/main.png "Basic flow architecture")
+
+### 2.2. Advanced flow (*advanced* branch)
+![Advanced flow architecture](/docs/advanced.png "Advanced flow architecture")
+
+
+## 3. Development from scratch
+
+Initialize the CDK project
+```
+$ cdk init app --language python
+```
+
+
+## 4. Deployment
 
 The `cdk.json` file tells the CDK Toolkit how to execute your app.
 
@@ -47,6 +79,12 @@ To add additional dependencies, for example other CDK libraries, just add
 them to your `setup.py` file and rerun the `pip install -r requirements.txt`
 command.
 
+Deploy to your account
+
+```
+$ cdk deploy
+```
+
 ## Useful commands
 
  * `cdk ls`          list all stacks in the app
@@ -55,4 +93,5 @@ command.
  * `cdk diff`        compare deployed stack with current state
  * `cdk docs`        open CDK documentation
 
-Enjoy!
+
+## 5. 
