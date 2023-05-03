@@ -80,10 +80,10 @@ class OrderProcessingStack(Stack):
         sns_topic = sns.Topic(self, "send_fulfillment")
         
         sns_topic.add_subscription(
-            sns_sub.EmailSubscription("myngy@amazon.com")
+            sns_sub.EmailSubscription("email@demo.com")
         )
         sns_topic.add_subscription(
-            sns_sub.SmsSubscription("+84935371361")
+            sns_sub.SmsSubscription("+84000000000")
         )
         
         send_message = sfn_tasks.SnsPublish(self, "send_message",
